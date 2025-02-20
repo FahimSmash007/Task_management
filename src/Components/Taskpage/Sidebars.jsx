@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Sidebars = () => {
   return (
-    <div className="flex flex-col items-center w-52 h-screen overflow-hidden text-gray-700 bg-gray-100 rounded">
+    <div className="flex flex-col items-center w-72 h-screen overflow-hidden text-gray-700 bg-gray-100 rounded">
       <NavLink
         to="/"
         className="flex items-center w-full px-3 mt-3"

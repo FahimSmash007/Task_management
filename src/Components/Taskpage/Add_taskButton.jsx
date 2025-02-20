@@ -1,22 +1,39 @@
+import axios from 'axios';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
-const Add_taskButton = () => {
+const Add_taskButton = ({id}) => {
+   console.log(id);
+   
   const {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
   } = useForm({
     defaultValues: {
-      "task-name": "",
+      "task_name": "",
       "description": "",
       "time": "",
+      
     },
   });
 
   const onSubmit = (data) => {
-    console.log(data); // Replace this with your form submission logic
+      console.log("Submitted Data: ", data);
+     const {task_name,description,time}=data
+
+     const final={
+      task_name:task_name,
+      description:description,
+      time:time,
+      category_id:id
+     }
+    axios.post(`${import.meta.env.VITE_API_URL}/ALL_Tasks`, final)
+      .then(response => console.log("Response:", response.data))
+      .catch(error => console.error("Error:", error));
+    
   };
+  
 
   const openModal = () => {
     document.getElementById("my_modal_2").showModal();
@@ -30,7 +47,7 @@ const Add_taskButton = () => {
     <div>
       {/* Button to open the modal */}
       <button
-        className="css-button-shadow-border-sliding--black mt-5 mb-6"
+        className="css-button-shadow-border-sliding--black  "
         onClick={openModal}
       >
         Add Task
@@ -51,7 +68,7 @@ const Add_taskButton = () => {
               <label className="block">
                 <span className="block font-medium mb-1">Task Name</span>
                 <input
-                  {...register("task-name", { required: "Task name is required" })}
+                  {...register("task_name", { required: "Task name is required" })}
                   type="text"
                   className="input input-bordered w-full"
                 />
