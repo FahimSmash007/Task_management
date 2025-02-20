@@ -1,0 +1,54 @@
+{
+    "tasks": [
+      {
+        "id": "task-1",
+        "title": "Design project layout",
+        "description": "Plan the overall structure and components of the project.",
+        "timestamp": "2025-02-19T18:30:00Z",
+        "category": "To-Do"
+      },
+      {
+        "id": "task-2",
+        "title": "Set up React project with Vite",
+        "description": "Create a new React project using Vite for faster builds.",
+        "timestamp": "2025-02-19T18:45:00Z",
+        "category": "To-Do"
+      },
+      {
+        "id": "task-3",
+        "title": "Install required dependencies",
+        "description": "Add React Router, Tailwind CSS, and drag-and-drop libraries.",
+        "timestamp": "2025-02-19T19:00:00Z",
+        "category": "To-Do"
+      },
+      {
+        "id": "task-4",
+        "title": "Implement authentication flow",
+        "description": "Create login, registration, and authentication logic.",
+        "timestamp": "2025-02-19T20:15:00Z",
+        "category": "In Progress"
+      },
+      {
+        "id": "task-5",
+        "title": "Create dashboard UI",
+        "description": "Develop the main dashboard interface using Tailwind CSS.",
+        "timestamp": "2025-02-19T20:45:00Z",
+        "category": "In Progress"
+      },
+      {
+        "id": "task-6",
+        "title": "Initialize Git repository",
+        "description": "Set up Git for version control and push to GitHub.",
+        "timestamp": "2025-02-19T17:00:00Z",
+        "category": "Done"
+      },
+      {
+        "id": "task-7",
+        "title": "Set up Tailwind CSS with Vite",
+        "description": "Configure Tailwind CSS to work seamlessly with the Vite project.",
+        "timestamp": "2025-02-19T17:30:00Z",
+        "category": "Done"
+      }
+    ]
+  }
+  
