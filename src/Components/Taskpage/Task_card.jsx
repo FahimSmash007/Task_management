@@ -2,7 +2,7 @@ import React from 'react';
 
 const Task_card = ({ task }) => {
     return (
-        <div draggable>
+        <div draggable className='w-96'>
             <div
                 key={task.id}  
                 className="border border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-shadow duration-200">

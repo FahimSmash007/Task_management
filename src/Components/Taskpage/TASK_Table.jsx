@@ -1,16 +1,12 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import Task_card from './Task_card';
-import Add_taskButton from './Add_taskButton';
-import CreateDivButton from './CreateDivButton';
+import Create_Body_of_tasks from './Create_Body_of_tasks';
 
 const TASK_Table = () => {
     
     return (
         <div className="p-4">
-         
-                {/* <Add_taskButton></Add_taskButton> */}
-                <CreateDivButton></CreateDivButton>
+          <Create_Body_of_tasks></Create_Body_of_tasks>
             
             
         </div>
