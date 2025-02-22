@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Add_Category from './Add_Category';
 
 const Sidebars = () => {
   return (
@@ -18,14 +19,9 @@ const Sidebars = () => {
         </svg>
         <span className="ml-2 text-sm font-bold">The App</span>
       </NavLink>
-
       <div className="w-full px-2">
         <div className="flex flex-col items-center w-full mt-3 border-t border-gray-300">
-          <SidebarItem
-            to="dashboard"
-            iconPath="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-            text="Dashboard"
-          />
+         
           <SidebarItem
             to="all_task"
             iconPath="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
@@ -37,19 +33,9 @@ const Sidebars = () => {
             text="Docs"
           />
         </div>
-
-        <div className="flex flex-col items-center w-full mt-2 border-t border-gray-300">
-          <SidebarItem
-            to="message"
-            iconPath="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
-            text="Messages"
-          />
-        </div>
-      </div>
-
-      <NavLink
+        <NavLink
         to="/account"
-        className="flex items-center justify-center w-full h-16 mt-auto bg-gray-200 hover:bg-gray-300"
+        className="flex  pl-3 items-center w-full h-16 mt-auto bg-gray-200 hover:bg-gray-300"
       >
         <svg
           className="w-6 h-6 stroke-current"
@@ -67,6 +53,17 @@ const Sidebars = () => {
         </svg>
         <span className="ml-2 text-sm font-medium">Account</span>
       </NavLink>
+
+        {/* <div className="flex flex-col items-center w-full mt-2 border-t border-gray-300">
+          <SidebarItem
+            to="message"
+            iconPath="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+            text="Messages"
+          />
+        </div> */}
+      </div>
+
+      
     </div>
   );
 };

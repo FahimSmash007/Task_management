@@ -5,7 +5,7 @@ import About from '../Components/About';
 import ALL_Taskes from '../Task_Pages/ALL_Taskes';
 import Profile from '../Task_Pages/Profile';
 import TaskPage from '../Task_Pages/TaskPage';
-import Dashboard from '../Components/Taskpage/Dashboard';
+// import Dashboard from '../Components/Taskpage/Dashboard';
 const Routers = () => {
   return (
     <Routes>
@@ -13,7 +13,7 @@ const Routers = () => {
       <Route path="/about" element={<About></About>} />
       {/* task dashboard */}
       <Route path="/task" element={<TaskPage></TaskPage>}>
-        <Route  path='dashboard' element={<Dashboard></Dashboard>} />
+        {/* <Route  path='dashboard' element={<Dashboard></Dashboard>} /> */}
         <Route  path='all_task' element={<ALL_Taskes></ALL_Taskes>} />
         <Route path="user_profile" element={<Profile></Profile>} />
 

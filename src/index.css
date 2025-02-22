@@ -45,3 +45,18 @@
 .css-button-shadow-border-sliding--black:active {
   top: 2px;
 }
+
+@keyframes ver_center {
+  0% {
+            transform: scaleY(0);
+    opacity: 1;
+  }
+  100% {
+            transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+.ver_center {
+	        animation: ver_center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
